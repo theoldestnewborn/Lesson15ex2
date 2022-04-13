@@ -7,7 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         LocalDate today = LocalDate.now();
-        TemporalAdjuster nextTuesday = TemporalAdjusters.next(DayOfWeek.TUESDAY);{
+        TemporalAdjuster nextTuesday = TemporalAdjusters.next(DayOfWeek.TUESDAY);
+        {
             System.out.println(today.with(nextTuesday));
         }
     }
